@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Meetings</title>
+</head>
+<body>
+<h1>Meetings</h1>
+<table>
+  <thead>
+  <tr>
+
+
+    <th>Start Date/Time</th>
+    <th>End Date/Time</th>
+    <th>Organizer</th>
+    <th>Attendees</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="meeting : ${meetings}">
+
+
+    <td th:text="${meeting.StartTime}"></td>
+    <td th:text="${meeting.EndTime}"></td>
+    <td th:text="${meeting.Organizer.name}"></td>
+    <td>
+      <ul>
+        <li th:each="attendee : ${meeting.Attendee}">
+          <span th:text="${Attendee.name}"></span>
+        </li>
+      </ul>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
