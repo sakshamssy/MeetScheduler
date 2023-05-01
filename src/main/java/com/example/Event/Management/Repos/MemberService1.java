@@ -17,5 +17,5 @@ public interface MemberService1 {
 
     public void deleteMember(String memberId);
 
-    Member findMembersbyBITSid(String BITSid);
+    Member findMembersbyBITSmail(String BITSmail);
 }

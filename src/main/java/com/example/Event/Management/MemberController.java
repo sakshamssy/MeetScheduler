@@ -25,7 +25,6 @@ public class MemberController {
     @PutMapping
     public Member updateMember(@RequestBody Member member){
         return memberService.updateMember(member);
-
     }
 
     @DeleteMapping("/{memberID}")
@@ -34,8 +33,8 @@ public class MemberController {
 
     }
 
-    @GetMapping("/BITSid/{BITSid}")
-    public Member findMembersByBITSid(@PathVariable String BITSid){
-        return  memberService.findMembersbyBITSid(BITSid);
+    @GetMapping("/BITSmail/{BITSmail}")
+    public Member findMembersByBITSmail(@PathVariable String BITSmail){
+        return  memberService.findMembersbyBITSmail(BITSmail);
     }
 }

@@ -10,7 +10,7 @@ import java.util.List;
 @Transactional
 @Repository
 public interface MeetRepository extends MongoRepository<Meets, String>{
-    List<Meets> findByOrganizerBITSidOrderByStartDateTimeAsc(String Id);
+    List<Meets> findByOrganizerBITSmailOrderByStartDateTimeAsc(String Id);
 
     Meets findMeetsByid(String Meetingid);
 

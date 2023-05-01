@@ -26,11 +26,11 @@ public class MemberService {
         memberRepository.deleteById(memberId);
     }
 
-    public Member findMembersbyBITSid(String BITSid){
-        return memberRepository.findMemberByBITSid(BITSid);
+    public Member findMembersbyBITSmail(String BITSmail){
+        return memberRepository.findMemberByBITSmail(BITSmail);
     }
 
-    public void issue_request(String BITSid,Member member,Meets meeting){
+    public void issue_request(String BITSmail,Member member,Meets meeting){
 
     }
 

@@ -2,22 +2,22 @@ package com.example.Event.Management.models;
 
 public class LoginDTO {
 
-    public String BITSid;
+    public String BITSmail;
     public String password;
 
     public LoginDTO()
     {}
-    public LoginDTO(String BITSid, String password){
-        this.BITSid = BITSid;
+    public LoginDTO(String BITSmail, String password){
+        this.BITSmail = BITSmail;
         this.password = password;
     }
 
-    public String getBITSid() {
-        return BITSid;
+    public String getBITSmail() {
+        return BITSmail;
     }
 
-    public void setBITSid(String BITSid) {
-        this.BITSid = BITSid;
+    public void setBITSmail(String BITSmail) {
+        this.BITSmail = BITSmail;
     }
 
     public String getPassword() {
@@ -31,7 +31,7 @@ public class LoginDTO {
     @Override
     public String toString() {
         return "LoginDTO{" +
-                "BITSid='" + BITSid + '\'' +
+                "BITSmail='" + BITSmail + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

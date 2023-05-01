@@ -20,16 +20,16 @@ import java.util.*;
 @NoArgsConstructor
 //public class Calendar {
    // @Id
-    //public String BITSid;
+    //public String BITSmail;
 public class Calendar{
     @Id
-    public String BITSid;
-    public Map<LocalDate, Map<LocalTime, Integer>> events;
+    public String BITSmail;
+    private Map<LocalDate, Map<LocalTime, Integer>> events;
     public LocalDate currentDate = LocalDate.now();
     public LocalTime currentTime = LocalTime.now();
 
-    public Calendar(String BITSid) {
-        this.BITSid=BITSid;
+    public Calendar(String BITSmail) {
+        this.BITSmail=BITSmail;
         this.events = new HashMap<>();
     }
 
@@ -97,15 +97,15 @@ public class Calendar{
 
     }//generate calendar ends
 
-    public String getBITSid() {
-        return BITSid;
+    public String getBITSmail() {
+        return BITSmail;
     }
 
-    public void setBITSid(String BITSid) {
-        this.BITSid = BITSid;
+    public void setBITSmail(String BITSmail) {
+        this.BITSmail = BITSmail;
     }
 
-    public Map<LocalDate, Map<LocalTime, Integer>> getcal(String BITSid){
+    public Map<LocalDate, Map<LocalTime, Integer>> getcal(String BITSmail){
         return events;
     }
 

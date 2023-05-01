@@ -34,7 +34,7 @@ public class EventManagementApplication {
 	@Bean
 	CommandLineRunner runner(MemberService memberService, MeetingService meetingService, CalendarService calendarService){
 		return args -> {
-			Member member1 = new Member("1797", "Anurag", "anurag");
+			/*Member member1 = new Member("1797", "Anurag", "anurag");
 			Member member2 = new Member("1791", "Virat", "virat");
 			Member member3 = new Member("1800", "Rohit", "rohit");
 
@@ -48,7 +48,7 @@ public class EventManagementApplication {
 
 			meetingService.addMeeting(meet1);
 			meetingService.addMeeting(meet2);
-			meetingService.addMeeting(meet2);
+			meetingService.addMeeting(meet3);
 			LocalDate date = meet1.startDateTime.toLocalDate();
 			LocalTime time = meet1.startDateTime.toLocalTime();
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
@@ -61,19 +61,19 @@ public class EventManagementApplication {
 			}
 
 
-			Calendar calendar1 = new Calendar(member1.getBITSid()); //generated calenadars for all three members using
+			Calendar calendar1 = new Calendar(member1.getBITSmail()); //generated calenadars for all three members using
 			calendar1.generateCalendar(calendar1.currentDate);
 			//member1.calendar = calendar1;							//Bitsid. Then initialesd the calendar object attribute
 			//member1.events = calendar1.getcal();			//inside member class by using the generated calendar object
 															//using getcal to return th hashmap that stores the schedule
 
-			Calendar calendar2 = new Calendar(member2.getBITSid());
+			Calendar calendar2 = new Calendar(member2.getBITSmail());
 			calendar2.generateCalendar(calendar2.currentDate);
 			//member2.calendar = calendar2;
 			//member2.events = calendar2.getcal();
 
 
-			Calendar calendar3 = new Calendar(member3.getBITSid());
+			Calendar calendar3 = new Calendar(member3.getBITSmail());
 			calendar3.generateCalendar(calendar3.currentDate);
 			//member3.calendar = calendar3;
 			//member3.events = calendar3.getcal();
@@ -84,7 +84,7 @@ public class EventManagementApplication {
 
 			memberService.updateMember(member1);
 			memberService.updateMember(member2);
-			memberService.updateMember(member3);
+			memberService.updateMember(member3);*/
 
 
 		};

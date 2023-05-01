@@ -27,18 +27,18 @@ public class CalendarController {
         return ResponseEntity.ok(savedCalendar);
     }
 
-    @GetMapping("/BITSid/{BITSid}")
-    public Calendar findCalnedarByBITSid(@PathVariable String BITSid){
-        return  calendarService.findCalendarbyBITSId(BITSid);
+    @GetMapping("/BITSmail/{BITSmail}")
+    public Calendar findCalnedarByBITSmail(@PathVariable String BITSmail){
+        return  calendarService.findCalendarbyBITSId(BITSmail);
     }
 /*
-    @PutMapping("/BITSid/{BITSid}/SetAvailibility/{Date}/{Time}")
-    public Calendar SetAvailibility(@PathVariable String BITSid,@PathVariable String Date,@PathVariable String Time){
+    @PutMapping("/BITSmail/{BITSmail}/SetAvailibility/{Date}/{Time}")
+    public Calendar SetAvailibility(@PathVariable String BITSmail,@PathVariable String Date,@PathVariable String Time){
         LocalDate date = LocalDate.parse(Date);
         LocalTime time = LocalTime.parse(Time);
         //LocalTime time = LocalTime.parse(Objects.requireNonNull(Time));
-        Calendar calendar = calendarService.findCalendarbyBITSId(BITSid);
-        //calendar.events = calendar.getcal(BITSid);
+        Calendar calendar = calendarService.findCalendarbyBITSId(BITSmail);
+        //calendar.events = calendar.getcal(BITSmail);
         int value = calendar.events.get(date).get(time);
         //System.out.println(time);
         //System.out.println(value);
@@ -48,8 +48,8 @@ public class CalendarController {
         return calendarService.updateCalendar(calendar);
     }*/
 
-   // @PostMapping("/BITSid1/{BITSid1}/IssueRequest/BITSid2/{BITSid2}/{Date}/{Time}")
-    //public Calendar IssueRe(@PathVariable String BITSid,@PathVariable String Date,@PathVariable String Time){
+   // @PostMapping("/BITSmail1/{BITSmail1}/IssueRequest/BITSmail2/{BITSmail2}/{Date}/{Time}")
+    //public Calendar IssueRe(@PathVariable String BITSmail,@PathVariable String Date,@PathVariable String Time){
 
 
 

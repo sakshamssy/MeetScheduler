@@ -14,9 +14,9 @@ import java.util.Optional;
 @Repository
 public interface MemberRepository extends MongoRepository<Member, String> {
 
-    Member findMemberByBITSid(String BITSid);
+    Member findMemberByBITSmail(String BITSmail);
 
-    Optional<Member> findOneByBITSidAndPassword(String BITSid, String password);
+    Optional<Member> findOneByBITSmailAndPassword(String BITSmail, String password);
 
 
 }

@@ -21,21 +21,21 @@ import java.util.Map;
 @NoArgsConstructor
 public class Member {
     @Id //primary key
-    public String BITSid;
+    public String BITSmail;
     public String name;
     private String password;
     //public Map<LocalDate, Map<LocalTime, Integer>> events;
 
     @DBRef
-    public List<Meets> scheduledMeets;
+    private List<Meets> scheduledMeets;
     @DBRef
-    public ArrayList<Meets> requestedMeets;
+    private ArrayList<Meets> requestedMeets;
 
     //@DBRef
     //public Calendar calendar;
 
-    public Member(String BITSid, String name, String password){
-        this.BITSid = BITSid;
+    public Member(String BITSmail, String name, String password){
+        this.BITSmail = BITSmail;
         this.name = name;
         this.password = password;
         this.scheduledMeets = new ArrayList<>();
@@ -43,12 +43,12 @@ public class Member {
 
     }
 
-    public String getBITSid() {
-        return BITSid;
+    public String getBITSmail() {
+        return BITSmail;
     }
 
-    public void setBITSid(String BITSid) {
-        this.BITSid = BITSid;
+    public void setBITSmail(String BITSmail) {
+        this.BITSmail = BITSmail;
     }
 
     public String getName() {
@@ -90,7 +90,7 @@ public class Member {
     @Override
     public String toString() {
         return "Member{" +
-                "BITSid='" + BITSid + '\'' +
+                "BITSmail='" + BITSmail + '\'' +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 //", events=" + events +

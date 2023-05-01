@@ -16,5 +16,5 @@ package com.example.Event.Management.Repos;
 @Transactional
 public interface CalendarRepository extends MongoRepository<Calendar, String> {
 
-    Calendar findCalendarByBITSid(String bitSid);
+    Calendar findCalendarByBITSmail(String bitSid);
 }

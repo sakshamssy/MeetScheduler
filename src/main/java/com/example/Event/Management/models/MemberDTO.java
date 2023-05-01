@@ -2,27 +2,27 @@ package com.example.Event.Management.models;
 
 public class MemberDTO {
 
-    public String BITSid;
+    public String BITSmail;
     public String name;
     private String password;
 
     public MemberDTO(){
     }
 
-    public MemberDTO(String BITSid, String name, String password){
+    public MemberDTO(String BITSmail, String name, String password){
 
-        this.BITSid = BITSid;
+        this.BITSmail = BITSmail;
         this.name = name;
         this.password  = password;
 
     }
 
-    public String getBITSid() {
-        return BITSid;
+    public String getBITSmail() {
+        return BITSmail;
     }
 
-    public void setBITSid(String BITSid) {
-        this.BITSid = BITSid;
+    public void setBITSmail(String BITSmail) {
+        this.BITSmail = BITSmail;
     }
 
     public String getName() {
@@ -44,7 +44,7 @@ public class MemberDTO {
     @Override
     public String toString() {
         return "MemberDTO{" +
-                "BITSid='" + BITSid + '\'' +
+                "BITSmail='" + BITSmail + '\'' +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 '}';

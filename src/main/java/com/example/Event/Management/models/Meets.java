@@ -24,10 +24,10 @@ public class Meets {
     public LocalDate/*Time*/ Date;
 
     @DBRef
-    public Member organizer;
+    private Member organizer;
 
     @DBRef
-    public Member attendee;
+    private Member attendee;
 
     public Meets(LocalDate/*Time*/ date, LocalTime startTime, Member organizer, Member attendee) {
 

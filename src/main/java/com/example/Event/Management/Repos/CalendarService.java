@@ -27,9 +27,9 @@ public class CalendarService {
         calendarRepository.deleteById(BitsId);
     }
 
-    public Calendar findCalendarbyBITSId(String BITSid)
+    public Calendar findCalendarbyBITSId(String BITSmail)
     {
-        return calendarRepository.findCalendarByBITSid(BITSid);
+        return calendarRepository.findCalendarByBITSmail(BITSmail);
     }
 
 

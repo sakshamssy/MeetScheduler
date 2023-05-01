@@ -29,8 +29,8 @@ public class MeetingService {
         meetRepository.deleteById(meetingId);
     }
 
-    public List<Meets> findByOrganizerOrderByStartTimeAsc(String BITSid){
-        return meetRepository.findByOrganizerBITSidOrderByStartDateTimeAsc(BITSid);
+    public List<Meets> findByOrganizerOrderByStartTimeAsc(String BITSmail){
+        return meetRepository.findByOrganizerBITSmailOrderByStartDateTimeAsc(BITSmail);
     }
 
     public Meets findMeetsbyid(String Meetingid){
